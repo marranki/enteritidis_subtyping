@@ -22,7 +22,7 @@ class Jellyfisher(object):
     max_kmer_freq = attr.ib(default=200, validator=attr.validators.instance_of(int))
     tmp_dir = attr.ib(default='/tmp', validator=attr.validators.instance_of(str))
     threads = attr.ib(default=1, validator=attr.validators.instance_of(int))
-    kmer_fasta = attr.ib(default=resource_filename('heidelberg_subtyping', 'data/tiles.fasta'),
+    kmer_fasta = attr.ib(default=resource_filename('enteritidis_subtyping', 'data/tiles.fasta'),
                          validator=attr.validators.instance_of(str))
     jellyfish_exc = attr.ib(default='jellyfish', validator=attr.validators.instance_of(str))
     jf_file = attr.ib(default=None)
